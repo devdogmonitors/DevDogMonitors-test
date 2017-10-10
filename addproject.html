@@ -192,9 +192,9 @@
                 </div>
 				<div class="col-md-12 nopaddingleft nopaddingright">
 					<div class="ibox float-e-margins addproject">
-                            <div class="ibox-title">
+                            <!-- <div class="ibox-title">
                                 <h5>Add Project</h5>
-                            </div>
+                            </div> -->
                             <div class="ibox-content">
                                 <form class="form" action="#">
 								<div class="col-md-6 col-sm-6 col-md-6">
@@ -248,9 +248,11 @@
 									</span> -->
 									<div class="form-group">
 										<label for="inputsm">Email</label>
-										<input class="form-control input-sm" id="inputsm" type="text">
-										<i class="fa fa-plus btn-custom somebutton email-icon"></i>
-									  </div>
+										<div class="icon-addon addon-md">
+											<input type="text" class="form-control input-sm" id="email" style="width:90%;float:left">
+											<span><i class="fa fa-plus btn-custom somebutton email-icon"></i></span>
+										</div>
+									</div>
 									<div class="emailadd"></div>
 									</div>
 								  </form>
@@ -318,7 +320,7 @@
     <script src="js/plugins/pace/pace.min.js"></script>
 	<script>
 	$(".somebutton").click(function () {
-	  $(".emailadd").append('<div class="form-group"><label for="inputsm">Project Name</label><input class="form-control input-sm" id="inputsm" type="text"><i class="fa fa-plus btn-custom somebutton email-icon"></i> </div>');
+	  $(".emailadd").append('<div class="form-group"><label for="inputsm">Email</label><div class="icon-addon addon-md"><input type="text" class="form-control input-sm" id="email" style="width:90%;float:left"><span><i class="fa fa-plus btn-custom somebutton email-icon"></i></span></div></div>');
 	});
 </script>
 <script>

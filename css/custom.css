@@ -315,8 +315,11 @@
 .warningcard .info-box-number {color:#f39c12}
 .fixcard .info-box-number {color:#dd4b39}
 
-.appname h3 {margin-top:5px; margin-bottom:5px;}
-
+.appname h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #1ab394;
+}
 .redbg {background-color:#dd4b39;; width:15px; height:15px; border-radius:20px;}
 .greenbg {background-color:green; width:15px; height:15px; border-radius:20px;}
 .orangebg {background-color:orange; width:15px; height:15px; border-radius:20px;}
@@ -534,14 +537,17 @@
 .ui-input textarea {resize:none;}
 .txr-area-top {margin-top:-10px !important}
 .email-icon {
-    position: absolute;
     right: 164px;
     top: 49px;
     background: #1ab394;
     padding: 8px;
     color: #fff;
 }
-.ibox-content h3{margin-bottom:5px !important}
+.ibox-content h3 {
+    color: #1ab394;
+    margin-bottom: 5px !important;
+	font-size:14px;
+}
 textarea{resize:none !important}
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:hover, .btn-primary.active:focus {
     background-color: #1ab394;
@@ -610,8 +616,8 @@ textarea{resize:none !important}
     padding: 5px 5px !important;
 }
 .custom-img {
-    width: 82px;
-    height: 82px;
+    width: 80px;
+    height: 80px;
 }
 }
 @media only screen and (max-width: 767px) and (min-width: 425px){
