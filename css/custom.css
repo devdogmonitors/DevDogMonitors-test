@@ -657,7 +657,7 @@ body.mini-navbar .navbar-default .nav > li > a span{
     display: inline-block;
 }
 .navbar-top-links .dropdown-messages {
-    margin-left: 0px;
+    margin-left: -14px;
 }
 .navbar-top-links .dropdown-messages, .navbar-top-links .dropdown-tasks, .navbar-top-links .dropdown-alerts {
     width: 266px !important;
