@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevDog | Dashboard</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+			<div class="logo">
+				<a href="#"><img src="img/logo_edit-2.png"/></a>
+			</div>
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle center-block" src="img/profile.png" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle text-center" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                             </span> <span class="text-muted text-xs block">Admin <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="projects.html"><i class="fa fa-list"></i> <span class="nav-label">Projects</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.png">
+                                </a>
+                                <div>
+                                    <small class="pull-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.png">
+                                </a>
+                                <div>
+                                    <small class="pull-right text-navy">5h ago</small>
+                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.png">
+                                </a>
+                                <div>
+                                    <small class="pull-right">23h ago</small>
+                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html">
+                                    <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="profile.html">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="grid_options.html">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+        </div>
+            <div class="wrapper wrapper-content">
+        <div class="row">
+                    <div class="col-lg-4">
+                        <div class="ibox float-e-margins projectmonitoring">
+                            <div class="ibox-title">
+                                <h5>Projects Under Monitoring</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">12</h1>
+                                <div class="font-bold">
+									<div class="col-md-2 pull-right">
+										<img src="img/monitor.png" class="img-responsive pull-right"/>
+									</div>
+								</div>
+                                <small class="pull-left">Projects under monitoring</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ibox float-e-margins vulnerabilities">
+                            <div class="ibox-title">
+                                <h5>Vulnerabilities</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">86</h1>
+                                <div class="font-bold">
+									<div class="col-md-2 pull-right">
+										<img src="img/vulnerabilities.png" class="img-responsive pull-right"/>
+									</div>
+								</div>
+                                <small class="pull-left">Vulnerabilities detected</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ibox float-e-margins upgrades">
+                            <div class="ibox-title">
+                                <h5>Upgrades Recommended</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">256</h1>
+                                <div class="font-bold">
+									<div class="col-md-2 pull-right">
+										<img src="img/upgrades.png" class="img-responsive pull-right"/>
+									</div>
+								</div>
+                                <small class="pull-left">Upgrades recommended</small>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+                <div class="row">
+					<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+						<div class="ibox float-e-margins recommendations">
+                            <div class="ibox-title">
+                                <h5>Recommendations</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="feed-activity-list">
+                                    <div class="feed-element">
+                                        <div class="col-md-12 nopaddingright nopaddingleft">
+											<div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 nopaddingright nopaddingleft">
+												<h5><strong>Project Name</strong></h5>
+											</div>
+											<div class="col-md-8 col-lg-8 col-sm-6 col-xs-6 nopaddingright nopaddingleft">
+												<h5><strong>Action</strong></h5>
+											</div>
+											<div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 nopaddingright nopaddingleft">
+												<h5>Customer Care App</h5>
+											</div>
+											<div class="col-md-8 col-lg-8 col-sm-6 col-xs-6 nopaddingright nopaddingleft">
+												<h5>Upgrade 8 old dependecies to the latest version. Click here to see list of jars to be upgrades and recommended Jars.<br/>
+													<small class="text-muted pull-right">Today 5:60 pm - 12.06.2014</small>
+												</h5>
+											</div>
+											<div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 nopaddingright nopaddingleft">
+												<h5>Payment Portal</h5>
+											</div>
+											<div class="col-md-8 col-lg-8 col-sm-6 col-xs-6 nopaddingright nopaddingleft">
+												<h5>Upgrade 5 dependecies to resolve hight severity security vulnerablities. Click here to see list of jars and respective vulnerablities.<br/>
+													<small class="text-muted pull-right">Yesterday 5:60 pm - 12.06.2014</small>
+												</h5>
+											</div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+					<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 projectslist">
+                                <div class="ibox float-e-margins">
+                                    <div class="ibox-title">
+                                        <h5>User project list</h5>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <table class="table table-hover no-margins">
+                                            <thead>
+                                            <tr>
+                                                <th>Status</th>
+                                                <th>Date</th>
+                                                <th>User</th>
+                                                <th>Value</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><small>Pending...</small></td>
+                                                <td><i class="fa fa-clock-o"></i> 11:20pm</td>
+                                                <td>Samantha</td>
+                                                <td class="text-navy"> <i class="fa fa-level-up"></i> 24% </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="label label-warning">Canceled</span> </td>
+                                                <td><i class="fa fa-clock-o"></i> 10:40am</td>
+                                                <td>Monica</td>
+                                                <td class="text-navy"> <i class="fa fa-level-up"></i> 66% </td>
+                                            </tr>
+                                            <tr>
+                                                <td><small>Pending...</small> </td>
+                                                <td><i class="fa fa-clock-o"></i> 01:30pm</td>
+                                                <td>John</td>
+                                                <td class="text-navy"> <i class="fa fa-level-up"></i> 54% </td>
+                                            </tr>
+                                            <tr>
+                                                <td><small>Pending...</small> </td>
+                                                <td><i class="fa fa-clock-o"></i> 02:20pm</td>
+                                                <td>Agnes</td>
+                                                <td class="text-navy"> <i class="fa fa-level-up"></i> 12% </td>
+                                            </tr>
+                                            <tr>
+                                                <td><small>Pending...</small> </td>
+                                                <td><i class="fa fa-clock-o"></i> 09:40pm</td>
+                                                <td>Janet</td>
+                                                <td class="text-navy"> <i class="fa fa-level-up"></i> 22% </td>
+                                            </tr>
+                                           
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Peity -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/demo/peity-demo.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+</body>
+</html>

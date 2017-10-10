@@ -1,623 +1,334 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<!-- Head -->
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="utf-8" />
-    <title>DevDogMonitors</title>
 
-    <meta name="description" content="Dashboard" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!-- <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>DevDog | Add Project</title>
 
-    <!--Basic Styles-->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
-	<!--Page Related styles-->
-    <link href="assets/css/dataTables.bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 
-    <!--Fonts-->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-    <!--Beyond styles-->
-    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
-    
-    
-    <link href="assets/css/demo.min.css" rel="stylesheet" />
-    <link href="assets/css/typicons.min.css" rel="stylesheet" />
-    <link href="assets/css/animate.min.css" rel="stylesheet" />
-    <link href="assets/css/custom.css" rel="stylesheet" />
-    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
-
-    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
-    <script src="assets/js/skins.min.js"></script>
-	
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 	<style>
-	
+		.page-heading .ibox {margin-bottom:0px;}
 	</style>
 </head>
-<!-- /Head -->
-<!-- Body -->
-<body>
-    <!-- Loading Container -->
-    <div class="loading-container">
-        <div class="loader"></div>
-    </div>
-    <!--  /Loading Container -->
-    <!-- Navbar -->
-    <div class="navbar">
-    <div class="navbar-inner">
-        <div class="navbar-container">
-            <!-- Navbar Barnd -->
-            <div class="navbar-header pull-left">
-                <a href="#" class="navbar-brand" style="margin-top:8px;">
-                    <!--small>
-                        <img src="~/assets/img/logo.png" alt="" />
-                    </small-->
-                    DevDogMonitors
-                </a>
-            </div>
-            <!-- /Navbar Barnd -->
-            <!-- Sidebar Collapse -->
-            <div class="sidebar-collapse" id="sidebar-collapse">
-                <i class="collapse-icon fa fa-bars"></i>
-            </div>
-            <!-- /Sidebar Collapse -->
-            <!-- Account Area and Settings --->
-            <div class="navbar-header pull-right">
-                <div class="navbar-account">
-                    <ul class="account-area">
-                        <li>
-                            <a class="dropdown-toggle" data-toggle="dropdown" title="Notifications" href="#">
-                                <i class="icon fa fa-warning"></i>
-                            </a>
-                            <!--Notification Dropdown-->
-                            <ul class="pull-right dropdown-menu dropdown-arrow dropdown-notifications">
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <div class="notification-icon">
-                                                <i class="fa fa-file bg-themeprimary white"></i>
-                                            </div>
-                                            <div class="notification-body">
-                                                <span class="title">E-verify delayed</span>
-                                                <span class="description">20 min ago</span>
-                                            </div>
-                                            
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <div class="notification-icon">
-                                                <i class="fa fa-check bg-darkorange white"></i>
-                                            </div>
-                                            <div class="notification-body">
-                                                <span class="title">Onboarding Complete</span>
-                                                <span class="description">5 min ago</span>
-                                            </div>
-                                            
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <div class="notification-icon">
-                                                <i class="fa fa-user-plus bg-warning white"></i>
-                                            </div>
-                                            <div class="notification-body">
-                                                <span class="title">New Hire Added</span>
-                                                <span class="description">1 hour ago</span>
-                                            </div>
-                                            
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <!--/Notification Dropdown-->
-                        </li>
-                        <li>
-                            <a class="dropdown-toggle" data-toggle="dropdown" title="Mails" href="#">
-                                <i class="icon fa fa-envelope"></i>
-                                <span class="badge">3</span>
-                            </a>
-                            <!--Messages Dropdown-->
-                            <ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages">
-                                <li>
-                                    <a href="#">
-										<img src="assets/img/default.png" class="message-avatar">
-                                        <div class="message">
-                                            <span class="message-sender">
-                                                New User
-                                            </span>
-                                            <span class="message-time">
-                                                2 minutes ago
-                                            </span>
-                                            <span class="message-body">
-                                                Need further information from employee
-                                            </span>
-                
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                      <img src="assets/img/default.png" class="message-avatar">
-                                        <div class="message">
-                                            <span class="message-sender">
-                                                User 2
-                                            </span>
-                                            <span class="message-time">
-                                                Yesterday
-                                            </span>
-                                            <span class="message-body">
-                                                New hire accommodation request‏
-                                            </span>
-                                            
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                       <img src="assets/img/default.png" class="message-avatar">
-                                        <div class="message">
-                                            <span class="message-sender">
-                                                Client
-                                            </span>
-                                            <span class="message-time">
-                                                2 days ago
-                                            </span>
-                                            <span class="message-body">
-                                                Pending Management approval
-                                            </span>
-                                            
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <!--/Messages Dropdown-->
-                        </li>
-                        <li>
-                            <a class="dropdown-toggle" data-toggle="dropdown" title="Tasks" href="#">
-                                <i class="icon fa fa-tasks"></i>
-                                <span class="badge">2</span>
-                            </a>
-                            <!--Tasks Dropdown-->
-                            <ul class="pull-right dropdown-menu dropdown-tasks dropdown-arrow ">
-                                <li class="dropdown-header bordered-darkorange">
-                                    <i class="fa fa-tasks"></i>
-                                    2 Tasks In Progress
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">Onboarding</span>
-                                            <span class="pull-right">79%</span>
-                                        </div>
 
-                                        <div class="progress progress-xs">
-                                            <div style="width:79%" class="progress-bar"></div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">E-Verify</span>
-                                            <span class="pull-right">63%</span>
-                                        </div>
+<body class="">
 
-                                        <div class="progress progress-xs">
-                                            <div style="width:63%" class="progress-bar progress-bar-success"></div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="dropdown-footer">
-                                    <a href="#">
-                                        See All Tasks
-                                    </a>
-                                    <button class="btn btn-xs btn-default shiny darkorange icon-only pull-right"><i class="fa fa-check"></i></button>
-                                </li>
-                            </ul>
-                            <!--/Tasks Dropdown-->
-                        </li>
-                        <!--li>
-                            <a class="wave in" id="chat-link" title="Chat" href="#">
-                                <i class="icon glyphicon glyphicon-comment"></i>
-                            </a>
-                        </li-->
+    <div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+			<div class="logo">
+				<a href="#"><img src="img/logo_edit-2.png"/></a>
+			</div>
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle center-block" src="img/profile.png" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle text-center" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                             </span> <span class="text-muted text-xs block">Admin <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
+                </li>
+                <li class="active">
+                    <a href="projects.html"><i class="fa fa-list"></i> <span class="nav-label">Projects</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
                         <li>
-                            <a class="login-area dropdown-toggle" data-toggle="dropdown">
-                                <div class="avatar" title="View your public profile">
-                                    <img src="assets/img/avatars/adam-jansen.jpg">
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.png">
+                                </a>
+                                <div>
+                                    <small class="pull-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
                                 </div>
-                                <section>
-                                    <h2><span class="profile"><span id="ProfileName"></span>Admin</span></h2>
-                                </section>
-                            </a>
-                            <!--Login Area Dropdown-->
-                            <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
-                                <li class="username"><a></a></li>
-                                <li class="email"><a id="UserEmail" style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">admin@devdogmonitors.com</a></li>
-                                <!--Avatar Area-->
-                                <li>
-                                    <div class="avatar-area">
-                                        <img src="assets/img/avatars/adam-jansen.jpg" class="avatar">
-                                        <span class="caption">Change Photo</span>
-                                    </div>
-                                </li>
-                                <!--Avatar Area-->
-                                <li class="edit">
-                                    <a href="#" class="pull-left" id="Profile">Profile</a>
-                                    <!-- <a href="#" class="pull-right">Setting</a> -->
-                                </li>
-                                <!--Theme Selector Area-->
-                                <li class="theme-area" style="display:none">
-                                    <ul class="colorpicker" id="skin-changer">
-                                        <li><a class="colorpick-btn" href="#" style="background-color:#5DB2FF;" rel="assets/css/skins/blue.min.css"></a></li>
-                                        <li><a class="colorpick-btn" href="#" style="background-color:#2dc3e8;" rel="assets/css/skins/azure.min.css"></a></li>
-                                        <li><a class="colorpick-btn" href="#" style="background-color:#03B3B2;" rel="assets/css/skins/teal.min.css"></a></li>
-                                        <li><a class="colorpick-btn" href="#" style="background-color:#53a93f;" rel="assets/css/skins/green.min.css"></a></li>
-                                        <li><a class="colorpick-btn" href="#" style="background-color:#FF8F32;" rel="assets/css/skins/orange.min.css"></a></li>
-                                        <li><a class="colorpick-btn" href="#" style="background-color:#cc324b;" rel="assets/css/skins/pink.min.css"></a></li>
-                                        <li><a class="colorpick-btn" href="#" style="background-color:#AC193D;" rel="assets/css/skins/darkred.min.css"></a></li>
-                                        <li><a class="colorpick-btn" href="#" style="background-color:#8C0095;" rel="assets/css/skins/purple.min.css"></a></li>
-                                        <li><a class="colorpick-btn" href="#" style="background-color:#0072C6;" rel="assets/css/skins/darkblue.min.css"></a></li>
-                                        <li><a class="colorpick-btn" href="#" style="background-color:#585858;" rel="assets/css/skins/gray.min.css"></a></li>
-                                        <li><a class="colorpick-btn" href="#" style="background-color:#474544;" rel="assets/css/skins/black.min.css"></a></li>
-                                        <li><a class="colorpick-btn" href="#" style="background-color:#001940;" rel="assets/css/skins/deepblue.min.css"></a></li>
-                                    </ul>
-                                </li>
-                                <!--/Theme Selector Area-->
-                                <li class="dropdown-footer">
-                                    <a href="login.html"  >
-                                        Sign out
-                                    </a>
-                                </li>
-                            </ul>
-                            <!--/Login Area Dropdown-->
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.png">
+                                </a>
+                                <div>
+                                    <small class="pull-right text-navy">5h ago</small>
+                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.png">
+                                </a>
+                                <div>
+                                    <small class="pull-right">23h ago</small>
+                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html">
+                                    <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                </a>
+                            </div>
                         </li>
                     </ul>
-                    <!-- Settings -->
-                </div>
-            </div>
-            <!-- /Account Area and Settings -->
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="profile.html">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="grid_options.html">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
         </div>
-    </div>
-</div>
-    <!-- /Navbar -->
-    <!-- Main Container -->
-    <div class="main-container container-fluid">
-        <!-- Page Container -->
-        <div class="page-container">
-			<!-- Page Sidebar -->
-			<div class="page-sidebar" id="sidebar">
-				<ul class="nav sidebar-menu" id="All">
-				   <li class="active">
-						<a href="dashboard.html">
-							<i class="menu-icon glyphicon glyphicon-home" style="color:#2dc3e8"></i>
-							<span class="menu-text"> Dashboard </span>
-						</a>
-					</li>
-					<li>
-						<a href="projectsummary.html">
-							<i class="menu-icon fa fa-user" style="color:#53a93f;"></i>
-							<span class="menu-text"> Projects </span>
-							<i class="menu-expand"></i>
-						</a>
-					</li>
-				</ul>
-            </div>
-            <!-- /Page Sidebar -->
-            <!-- Page Content -->
-            <div class="page-content">
-                <!-- Page Breadcrumb -->
-                <div class="page-breadcrumbs">
-                    <ul class="breadcrumb">
+        <div class="wrapper wrapper-content">
+                <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-sm-12 nopaddingleft nopaddingright">
+                    <h2 class="addproject-heading">Add Project</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">Dashboard</a>
+                        </li>
+						<li>
+                            <a href="projects.html">Projects</a>
+                        </li>
                         <li class="active">
-                            <i class="fa fa-home themeprimary"></i>
-                            <a href="#">Add Project</a>
+                            <strong>Add Project</strong>
                         </li>
-						
-                    </ul>
+                    </ol>
                 </div>
-                <!-- /Page Breadcrumb -->
-                <!-- Page Header -->
-                <div class="page-header position-relative">
-                    <div class="header-title">
-                        <h1 class="themeprimary">
-                            Add Project
-                        </h1>
-                    </div>
-                    <!--Header Buttons-->
-                    <div class="header-buttons">
-                        <a class="sidebar-toggler" href="#">
-                            <i class="fa fa-arrows-h"></i>
-                        </a>
-                        <a class="refresh" id="refresh-toggler" href="">
-                            <i class="glyphicon glyphicon-refresh"></i>
-                        </a>
-                        <a class="fullscreen" id="fullscreen-toggler" href="#">
-                            <i class="glyphicon glyphicon-fullscreen"></i>
-                        </a>
-                    </div>
-                    <!--Header Buttons End-->
-                </div>
-                <!-- /Page Header -->
-                <!-- Page Body -->
-               <div class="row">
-            
-            <div class="col-md-12">
-                <section class="panel">
-                    <div class="panel-body project-summary">
-						<div class="row">
-							<div class="col-md-6">
-								<h5 class="row-title before-magenta"><i class="fa fa-file-powerpoint-o magenta"></i>PROJECT DETAILS</h5>
-								<div class="form-group">
-									<label for="exampleInputEmail1">Project Name</label>
-                                    <span class="input-icon icon-right">
-                                     <input type="text" class="form-control" id="userameInput" placeholder="Username">
-                                        <i class="glyphicon glyphicon-user circular"></i>
-                                    </span>
-                                </div>
-								<div class="form-group">
-								<label for="exampleInputEmail1">Description</label>
-                                    <span class="input-icon icon-right">
-                                    <textarea class="form-control" rows="2" placeholder="Description"></textarea>
-										<i class="fa fa-audio-description circular"></i>
-                                    </span>
-                                </div>
-								<div class="form-group">
-									<label for="exampleInputEmail1">Tags (Optional)</label>
-                                    <span class="input-icon icon-right">
-                                    <textarea class="form-control" rows="2" placeholder="Tags (Optional)"></textarea>
-										<i class="fa fa-tags circular"></i>
-                                    </span>
-                                </div>
-							</div>
-							<div class="col-md-6">
-								<h5 class="row-title before-magenta"><i class="fa fa-paper-plane magenta"></i>SEND SCAN RESULTS TO</h5>
-								<div class="form-group">
-									<label for="exampleInputEmail1">Email</label>
-                                    <span class="input-icon icon-right">
-                                        <input type="text" class="form-control" id="emailInput" placeholder="Email Address">
-                                        <i class="fa fa-plus circular"  id="somebutton"></i>
-                                    </span>
-                                </div>
-								<div class="emailadd"></div>
-							</div>
-						</div>
-						<hr class="hr-cust">
-						<div class="row">
-							<div class="col-md-6">
-							<h5 class="row-title before-magenta mrg-top-10"><i class="fa fa-keyboard-o magenta"></i>INPUTS</h5>
-							<div class="form-group cust-upload">
-								<label>Upload a Zip or War file</label>
-								<div class="input-group">
-									<span class="input-group-btn">
-										<span class="btn btn-default btn-file  btn-login">
-											Browse… <input type="file" id="imgInp" accept=".zip,application/octet-stream,application/zip,application/x-zip,application/x-zip-compressed">
-										</span>
+				<div class="col-md-12 nopaddingleft nopaddingright">
+					<div class="ibox float-e-margins addproject">
+                            <div class="ibox-title">
+                                <h5>Add Project</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <form class="form" action="#">
+								<div class="col-md-6 col-sm-6 col-md-6">
+									<h3>Project Details</h3>
+									<div class="form-group">
+										<label for="inputsm">Project Name</label>
+										<input class="form-control input-sm" id="inputsm" type="text">
+									  </div>
+									  <div class="form-group">
+										  <label for="comment">Description</label>
+										  <textarea class="form-control" rows="2" id="comment"></textarea>
+										</div>
+										<div class="form-group">
+										  <label for="comment">Tags (Optional)</label>
+										  <textarea class="form-control" rows="2" id="comment"></textarea>
+										</div>
+									<!-- <span class="input input--hoshi">
+										<input class="input__field input__field--hoshi" type="text" id="input-4" />
+										<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+											<span class="input__label-content input__label-content--hoshi">Project Name</span>
+										</label>
 									</span>
-									<input type="text" class="form-control" readonly="">
-								</div>
-								<i class="fa fa-upload circular upload-icon"></i>
-								<img id="img-upload">
-							</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="img-grid">
-									<img src="assets/img/github-logo.png" class="img-responsive">
-									<img src="assets/img/bitbucket_rgb_slate.png" class="img-responsive">
-									<img src="assets/img/starteam.png" class="img-responsive">
-									<img src="assets/img/subversion.png" class="img-responsive">
-									<img src="assets/img/mercurial.png" class="img-responsive">
-									<img src="assets/img/perforce.png" class="img-responsive">
-									<img src="assets/img/other.png" class="img-responsive">
-								</div>
-							</div>
-						</div>
-						<hr class="hr-cust">
-						<div class="text-center">
-						<a href="addproject.html" class="btn btn-sm btn-login text-center mrg-btm-8">Save</a>
-						</div>
-                    </div>
-                </section>
+									<span class="input input--hoshi txr-area-top">
+										<textarea class="input__field input__field--hoshi" rows="3" id="input-5"></textarea>
+										<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-5">
+											<span class="input__label-content input__label-content--hoshi">Description</span>
+										</label>
+									</span>
+									<span class="input input--hoshi txr-area-top">
+										<textarea class="input__field input__field--hoshi" rows="3" id="input-6"></textarea>
+										<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-6">
+											<span class="input__label-content input__label-content--hoshi">Tags (Optional)</span>
+										</label>
+									</span> -->
+								 </div>
+								 <div class="col-md-6 col-sm-6 col-md-6">
+									<h3>Send Scan Results To</h3>
+									<!-- <span class="input input--hoshi" id="Email">
+										<input class="input__field input__field--hoshi" type="text" id="input-7" />
+										<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-7">
+											<span class="input__label-content input__label-content--hoshi">Email</span>
+											<i class="fa fa-plus btn-custom somebutton"></i>
+										</label>
+									</span> -->
+									<!-- <span class="input input--hoshi">
+										<input class="input__field input__field--hoshi" type="text" id="input-4" />
+										<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+											<span class="input__label-content input__label-content--hoshi">Email</span>
+											<i class="fa fa-plus btn-custom somebutton email-icon"></i>
+										</label>
+									</span> -->
+									<div class="form-group">
+										<label for="inputsm">Email</label>
+										<input class="form-control input-sm" id="inputsm" type="text">
+										<i class="fa fa-plus btn-custom somebutton email-icon"></i>
+									  </div>
+									<div class="emailadd"></div>
+									</div>
+								  </form>
+								  <div class="clearfix"></div>
+								  <hr class="custom-hr"/>
+								  <div class="row">
+								  <div class="col-md-10 col-sm-7 col-lg-8">
+									<div class="form-group upload-width">
+										<input type="file" name="img[]" class="file">
+										<div class="input-group col-md-7 col-xs-12">
+										  <span class="input-group-addon"><i class="fa fa-file"></i></span>
+										  <input type="text" class="form-control input-md" disabled placeholder="Upload File">
+										  <span class="input-group-btn">
+											<button class="browse custom-fileupload btn-sm" type="button"><i class="fa fa-search"></i> Browse</button>
+										  </span>
+										</div>
+									</div>
+								  </div>
+								  </div>
+								  <div class="row">
+								  <div class="col-md-12 img-gallery">
+										<h3>Connect Source Code Repository(Comming soon)</h3>
+										<div class="col-md-1 col-sm-1 col-xs-1 custom-img">
+											<img src="img/github-logo.png" class="img-responsive"/>
+										</div>
+										<div class="col-md-1 col-sm-1 col-xs-1 custom-img">
+											<img src="img/bitbucket_rgb_slate.png" class="img-responsive"/>
+										</div>
+										<div class="col-md-1 col-sm-1 col-xs-1 custom-img">
+											<img src="img/starteam.png" class="img-responsive"/>
+										</div>
+										<div class="col-md-1 col-sm-1 col-xs-1 custom-img">
+											<img src="img/subversion.png" class="img-responsive"/>
+										</div>
+										<div class="col-md-1 col-sm-1 col-xs-1 custom-img">
+											<img src="img/mercurial.png" class="img-responsive"/>
+										</div>
+										<div class="col-md-1 col-sm-1 col-xs-1 custom-img">
+											<img src="img/perforce.png" class="img-responsive"/>
+										</div>
+										<div class="col-md-1 col-sm-1 col-xs-1 custom-img">
+											<img src="img/other.png" class="img-responsive"/>
+										</div>
+								  </div>
+								  </div>
+								  <div class="col-md-12 text-center center-block">
+									  <button class="btn save-btn">Save</button>
+									</div>
+                            </div>
+                        </div>
+				</div>
             </div>
         </div>
-            </div>
-<div class="footer" style="z-index:0;">
+        </div>
+        </div>
 
-    <h6 class="pull-left col-md-4 col-md-offset-3 col-lg-3 col-lg-offset-2 col-xs-5 col-sm-3">Version 0.01.00.162</h6>
-    <h6 class="pull-right col-xs-6 col-md-4 col-sm-6 col-lg-4 col-lg-offset-1 text-right">Copyright © 2017 DevDogMonitors. All Rights Reserved</h6>
-</div>
-                    </div>
-                </div>
-                <!-- /Page Body -->
-            
-            <!-- /Page Content -->
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-       
-       
-    <!--Basic Scripts-->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/slimscroll/jquery.slimscroll.min.js"></script>
-
-    <!--Beyond Scripts-->
-    <script src="assets/js/beyond.min.js"></script>
-
-<!--Page Related Scripts-->
-    <script src="assets/js/datatable/jquery.dataTables.min.js"></script>
-    <script src="assets/js/datatable/ZeroClipboard.js"></script>
-    <script src="assets/js/datatable/dataTables.tableTools.min.js"></script>
-    <script src="assets/js/datatable/dataTables.bootstrap.min.js"></script>
-    <script src="assets/js/datatable/datatables-init.js"></script>
-    <!--Page Related Scripts-->
-    <!--Sparkline Charts Needed Scripts-->
-    <script src="assets/js/charts/sparkline/jquery.sparkline.js"></script>
-    <script src="assets/js/charts/sparkline/sparkline-init.js"></script>
-
-    <!--Easy Pie Charts Needed Scripts-->
-    <script src="assets/js/charts/easypiechart/jquery.easypiechart.js"></script>
-    <script src="assets/js/charts/easypiechart/easypiechart-init.js"></script>
-
-    <!--Flot Charts Needed Scripts-->
-    <script src="assets/js/charts/flot/jquery.flot.js"></script>
-    <script src="assets/js/charts/flot/jquery.flot.resize.js"></script>
-    <!-- <script src="assets/js/charts/flot/jquery.flot.pie.js"></script>-->
-    <script src="assets/js/charts/flot/jquery.flot.tooltip.js"></script>
-    <script src="assets/js/charts/flot/jquery.flot.orderBars.js"></script>
-	
-	
-	
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
 	<script>
-	$( ".outtaHeree" ).change(function() {
-  var selected = $('.outtaHeree').find(':selected');
-	 $('.'+selected.val()).show(); 
-	 InitiateBarChart.init();
-	 InitiateDonutChart.init();
-			
-    $('.optionvalue').html(selected.html());
-
-	})
-	
-	
-$('.outtaHeree').change(function(){
-    var selected = $(this).find(':selected');
-    $('.countrylistt').hide();
-   $('.'+selected.val()).show();
-  
-			InitiateBarChart2.init();
-			InitiateDonutChart2.init();
-			
-    $('.optionvalue').html(selected.html());
-});
-
-$('.outtaHeree').change(function(){
-    var selected = $(this).find(':selected');
-    $('.countrylistt').hide();
-   $('.'+selected.val()).show();
-  
-			InitiateBarChart3.init();
-			InitiateDonutChart3.init();
-			
-    $('.optionvalue').html(selected.html());
-});
-
-$('.outtaHeree').change(function(){
-    var selected = $(this).find(':selected');
-    $('.countrylistt').hide();
-   $('.'+selected.val()).show();
-  
-			InitiateBarChart4.init();
-			InitiateDonutChart4.init();
-			
-    $('.optionvalue').html(selected.html());
-});
-	
-	</script>
-	<script>
-	$(document).ready(function(){
-    var selected = $('.outtaHere').find(':selected');
-	 $('.'+selected.val()).show(); 
-    $('.optionvalue').html(selected.html());
-	})
-$('.outtaHere').change(function(){
-    var selected = $(this).find(':selected');
-    $('.countrylist').hide();
-   $('.'+selected.val()).show(); 
-    $('.optionvalue').html(selected.html());
-});
-</script>
-	
-
-    <script>
-	  InitiateExpandableDataTable.init();
-        // If you want to draw your charts with Theme colors you must run initiating charts after that current skin is loaded
-        $(window).bind("load", function () {
-
-            /*Sets Themed Colors Based on Themes*/
-            themeprimary = getThemeColorFromCss('themeprimary');
-            themesecondary = getThemeColorFromCss('themesecondary');
-            themethirdcolor = getThemeColorFromCss('themethirdcolor');
-            themefourthcolor = getThemeColorFromCss('themefourthcolor');
-            themefifthcolor = getThemeColorFromCss('themefifthcolor');
-
-            //Sets The Hidden Chart Width
-            $('#dashboard-bandwidth-chart')
-                .data('width', $('.box-tabbs')
-                    .width() - 50);
-
-            //-------------------------Initiates Easy Pie Chart instances in page--------------------//
-            InitiateEasyPieChart.init();
-
-            //-------------------------Initiates Sparkline Chart instances in page------------------//
-            InitiateSparklineCharts.init();
-			 InitiateBarChart.init();
-			 InitiateDonutChart.init();
-			 //InitiateDonutChart2.init();
-			 //InitiateDonutChart3.init();
-			 
-        });
-            
-    </script>
-	
-	<script src="assets/js/charts/morris/raphael-2.0.2.min.js"></script>
-    <script src="assets/js/charts/morris/morris.js"></script>
-    <script src="assets/js/charts/morris/morris-init.js"></script>
-    <script src="assets/js/selectivizr.js"></script>
-	<script>
-
-    	$(document).on('change', '.btn-file :file', function() {
-		var input = $(this),
-			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-		input.trigger('fileselect', [label]);
-		});
-
-		$('.btn-file :file').on('fileselect', function(event, label) {
-		    
-		    var input = $(this).parents('.input-group').find(':text'),
-		        log = label;
-		    
-		    if( input.length ) {
-		        input.val(log);
-		    } else {
-		        if( log ) alert(log);
-		    }
-	    
-		});
-		function readURL(input) {
-		    if (input.files && input.files[0]) {
-		        var reader = new FileReader();
-		        
-		        reader.onload = function (e) {
-		            $('#img-upload').attr('src', e.target.result);
-		        }
-		        
-		        reader.readAsDataURL(input.files[0]);
-		    }
-		}
-
-		$("#imgInp").change(function(){
-		    readURL(this);
-		}); 	
-
+	$(".somebutton").click(function () {
+	  $(".emailadd").append('<div class="form-group"><label for="inputsm">Project Name</label><input class="form-control input-sm" id="inputsm" type="text"><i class="fa fa-plus btn-custom somebutton email-icon"></i> </div>');
+	});
 </script>
 <script>
-	$("#somebutton").click(function () {
-  $(".emailadd").append('<div class="form-group"><label for="exampleInputEmail1">Email</label><span class="input-icon icon-right"><input type="text" class="form-control" id="emailInput" placeholder="Email Address"><i class="fa fa-envelope-o circular"></i></span></div>');
+	$(document).on('click', '.browse', function(){
+  var file = $(this).parent().parent().parent().find('.file');
+  file.trigger('click');
+});
+$(document).on('change', '.file', function(){
+  $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
 });
 </script>	
-
 </body>
-<!--  /Body -->
 </html>
