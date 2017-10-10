@@ -643,6 +643,7 @@ body.mini-navbar .navbar-default .nav > li > a {
 body.mini-navbar .navbar-default .nav > li > a span{
 	margin-top:-4px !important;
 }
+.projects-table {border:none !important}
 }
 @media only screen and (max-width: 1600px) and (min-width: 1024px){
 	.navbar-minimalize {display:none !important;}
@@ -670,6 +671,13 @@ body.mini-navbar .navbar-default .nav > li > a span{
 }
 .navbar-top-links .dropdown-alerts {
     margin-left: -90px;
+}
+.custom-btn {
+    background-color: #2dc3e8;
+    padding: 3px 4px;
+    border: none;
+    color: #fff;
+    font-size: 11px;
 }
 }
 .img-gallery img {margin-bottom:5px;}
