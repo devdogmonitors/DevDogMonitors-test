@@ -580,6 +580,7 @@ textarea{resize:none !important}
 	.custom-btn {margin-bottom:5px;}
 	.nopadleftright{padding-left:0px;padding-right:0px}
 	.ibox-content .form-group {margin-bottom:10px;width:100%;}
+	.ibox-content {padding: 15px 0px 20px 0px;}
 }
 @media only screen and (max-width: 374px) and (min-width: 320px){
 .email-icon {
@@ -591,6 +592,10 @@ textarea{resize:none !important}
 }
 .custom-fileupload {
     padding: 5px 5px !important;
+}
+.custom-img {
+    width: 65px;
+    height: 65px;
 }
 }
 @media only screen and (max-width: 424px) and (min-width: 375px){
@@ -604,17 +609,29 @@ textarea{resize:none !important}
 .custom-fileupload {
     padding: 5px 5px !important;
 }
+.custom-img {
+    width: 82px;
+    height: 82px;
+}
 }
 @media only screen and (max-width: 767px) and (min-width: 425px){
 .email-icon {
     right: 16px;
     top: 44px;
 }
+.custom-img {
+    width: 96px;
+    height: 96px;
+}
 }
 @media only screen and (max-width: 1024px) and (min-width: 768px){
 .email-icon {
     right: 16px;
     top: 48px;
+}
+.custom-img {
+    width: 86px;
+    height: 86px;
 }
 }
 @media only screen and (max-width: 768px) and (min-width: 320px){ 
@@ -680,5 +697,6 @@ body.mini-navbar .navbar-default .nav > li > a span{
     color: #fff;
     font-size: 11px;
 }
+
 }
 .img-gallery img {margin-bottom:5px;}
