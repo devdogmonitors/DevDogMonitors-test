@@ -705,4 +705,11 @@ body.mini-navbar .navbar-default .nav > li > a span{
 }
 
 }
+.prj-table {border:1px solid #1ab394;margin-top:4px;}
+.prj-table thead{background-color:#1ab394 !important;}
+.prj-table thead tr th {color:#fff;padding:5px;font-weight:normal;}
+.prj-table tbody tr td {padding:5px;font-weight:normal;}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #efefef;
+}
 .img-gallery img {margin-bottom:5px;}
