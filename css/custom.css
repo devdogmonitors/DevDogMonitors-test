@@ -660,13 +660,16 @@ body.mini-navbar .navbar-default .nav > li > a span{
     margin-left: 0px;
 }
 .navbar-top-links .dropdown-messages, .navbar-top-links .dropdown-tasks, .navbar-top-links .dropdown-alerts {
-    width: 252px !important;
+    width: 266px !important;
 }
 .dropdown-messages, .dropdown-alerts{
     padding: 10px 0px 10px 0px !important;
 }
 .dropdown-menu {
     font-size: 11px !important;
+}
+.navbar-top-links .dropdown-alerts {
+    margin-left: -90px;
 }
 }
 .img-gallery img {margin-bottom:5px;}
